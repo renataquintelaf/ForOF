@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<roteiro>
+    PROBLEMA
+    Considere a lista de números abaixo:
+    vamos listaDeNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 3500, 10];
+    Faça um programa que identifique os números pares e apresente-os ao fim do programa, ordenados de forma crescente.
+
+    ENTRADA
+vamos listaDeNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 3500, 10];
+deixe numPar = [];
+deixe numImpar = [];
+
+    PROCESSAMENTO
+listaDeNumeros. sort((a, b) => a - b )
+
+for (let numero of listaDeNumeros ) {
+    if (numero %2 === 0) {
+        numPar. empurrar (numero)
+    }mais{
+        numImpar. empurrar (numero)
+    }
+}
+
+    SAÍDA
+documento. write('Números pares= ${numPar} </br> Números ímpares= ${numImpar}')
+</roteiro>
